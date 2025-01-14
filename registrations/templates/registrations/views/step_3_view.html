@@ -1,0 +1,25 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <label for="verification-type" class="form-label">Verification Type</label>
+            {{form.verification_type}}
+        </div>
+        <div class="col-md-4">
+            <label for="address-line-2" class="form-label">Verification Document Number</label>
+            {{form.verification_document_number}}
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="document-front" class="form-label">Upload Front Side of Document</label>
+            {{form.front_side_document}}
+        </div>
+        <div class="col-md-6">
+            <label for="document-back" class="form-label">Upload Back Side of Document</label>
+            {{form.back_side_document}}
+        </div>
+    </div>
+</div>

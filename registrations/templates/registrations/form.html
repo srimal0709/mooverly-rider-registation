@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    {% if page == 'register_step1' or page == 'register_step2' or page == 'register_step3' %}
+
+        {% include 'registrations/components/process_bar.html' %}
+
+    {% endif %}
+
+    <form action="" method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        {% if page == 'register_step1' %}
+
+            {% include 'registrations/views/step_1_view.html' %}
+
+        {% elif page == 'register_step2' %}
+
+            {% include 'registrations/views/step_2_view.html' %}
+
+        {% elif page == 'register_step2' %}
+
+            {% include 'registrations/views/step_3_view.html' %}
+        
+        {% elif page == 'register_step3' %}
+
+            {% include 'registrations/views/step_3_view.html' %}
+        
+        {% elif page == 'register_step4' %}
+
+            {% include 'registrations/views/step_4_view.html' %}
+
+        {% endif %}
+
+        {% if page == 'register_step1' or page == 'register_step2' or page == 'register_step3' or page == 'register_step4' %}
+
+            {% include 'registrations/components/footer_buttons.html' %}
+
+        {% endif %}
+
+    </form>
+
+{% endblock content %}

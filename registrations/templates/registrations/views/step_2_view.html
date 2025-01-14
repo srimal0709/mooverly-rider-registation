@@ -1,0 +1,40 @@
+{% load widget_tweaks %}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="address-line-1" class="form-label">Address Line 1</label>
+            {{form.address_line_1}}
+        </div>
+        <div class="col-md-4">
+            <label for="address-line-2" class="form-label">Address Line 2</label>
+            {{form.address_line_2}}
+        </div>
+        <div class="col-md-4">
+            <label for="address-line-3" class="form-label">Address Line 3</label>
+            {{form.address_line_3}}
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <label for="description" class="form-label">Description / Bio</label>
+            {{form.description}}
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="working-type" class="form-label">Working Type</label>
+            {{form.working_type}}
+        </div>
+        <div class="col-md-8">
+            <label for="working-hours" class="form-label">Possible Working Hours</label>
+            {{form.possible_working_hours}}
+        </div>
+    </div>
+</div>
